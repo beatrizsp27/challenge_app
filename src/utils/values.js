@@ -1,8 +1,8 @@
 const k = {
-    navigations: {
-        product : '/',
-        detailsProduct: '/items/'
-    }
+  navigations: {
+    product: '/',
+    detailsProduct: '/items/',
+  },
 };
 
 export default k;
