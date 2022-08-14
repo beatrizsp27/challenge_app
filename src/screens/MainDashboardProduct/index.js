@@ -62,9 +62,6 @@ const MainDashboardProduct = () => {
 
 	return (
 		<>
-			<header>
-				<h1>Welcome to React Router!</h1>
-			</header>
 			<ContainerComponent>
 				{
 					errorMessage &&  (
@@ -73,15 +70,30 @@ const MainDashboardProduct = () => {
 				}
 				{arrayListProduct && arrayListProduct.length > 0 ? (
 					<>
-						{
-							arrayListProduct.map((item)=>(
-								<div key={item.id}>
-									<h1>{item.title}</h1>
-									<p>hola mundo</p>
-									<button onClick={() => goDetailsProduct(item.id)}>ver detalle de prodcuto</button>
-
-								</div>
-							))
+						{arrayListProduct.map((item)=> {
+								console.log("item" + JSON.stringify(item.price))
+								if(item){
+									return (
+										<div onClick={() => goDetailsProduct(item.id)} key={item.id} className={'screens_card'}>
+											<div>
+												<img src={item.picture} alt={item.title} width="100" height="130"/>
+											</div>
+											<div className={'screens_container_card'}>
+												{item.price && item.price.decimals && (
+													<h3>{`$${item.price.decimals}`} </h3>
+												)}
+												{item.title && (
+													<h3 className={'screens_title'}>{item.title}</h3>
+												)}
+											</div>
+											<div className={'screens_card_row3'}>
+												<h5>{item.free_shipping ? 'Capital Federal' : 'Mendoza'}</h5>
+											</div>
+										</div>
+									)
+								}
+								return null;
+							})
 						}
 					</>
 				):(

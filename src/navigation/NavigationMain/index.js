@@ -5,10 +5,15 @@ import {
 	MainDetailsProductScreen,
 } from '../../screens';
 import { k } from '../../utils';
+import img from  '../../assets/product/Logo_ML@2x.png.png'
 
 const NavigationMain = () => {
 	return (
 		<div>
+			<header className={'screens_details_header'} >
+				<img src={img} alt={''} width="50" height="50"/>
+				<h1>Welcome to React Router!</h1>
+			</header>
 			<BrowserRouter>
 				<Routes>
 					<Route

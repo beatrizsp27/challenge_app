@@ -42,6 +42,7 @@ const MainDetailsProduct = () => {
 		if (success) {
 			if(data){
 				const {item} = data;
+				console.log("item::: " + JSON.stringify(data))
 				setProduct(item);
 			}
 		}
@@ -76,8 +77,31 @@ const MainDetailsProduct = () => {
 			 )}
 			{product && (
 				<div>
-					<h1>{product.title} </h1>
-					<button onClick={() => goBack()}>Regresar</button>
+					<div className={'screens_details_root'}>
+						<div>
+							<img src={product.picture} alt={product.title} width="250" height="300"/>
+						</div>
+						<div>
+							{product.condition && (
+								<div className={'screens_title_container'}>
+									<p>{product.condition}</p>
+									<p>{`/ ${product.sold_quantity} Vendidos`}</p>
+								</div>
+
+							)}
+							{product.title && (
+								<h3 className={'screens_title'}>{product.title}</h3>
+							)}
+							{product.price && product.price.decimals && (
+								<h1>{`$${product.price.decimals}`} </h1>
+							)}
+							<button className={'screen_details_button'} onClick={() => goBack()}>Comprar</button>
+						</div>
+					</div>
+					<div className={'screen_details_description'}>
+						<h3>Descripción del producto</h3>
+						<p>{product.description} </p>
+					</div>
 				</div>
 			)}
 		</ContainerComponent>

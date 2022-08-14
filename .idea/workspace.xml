@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="019467b8-e34c-476c-a8ec-330dbd303ece" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/products/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/products/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/CardComponent/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/NavigationMain/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/NavigationMain/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/MainDashboardProduct/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MainDashboardProduct/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/MainDetailsProduct/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MainDetailsProduct/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MainDetailsProduct/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_container.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/screen/_screens.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/screen/_screens.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Sass File" />
         <option value="JavaScript File" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -72,7 +73,7 @@
       <workItem from="1660438631195" duration="475000" />
       <workItem from="1660439186628" duration="376000" />
       <workItem from="1660439568633" duration="993000" />
-      <workItem from="1660441185315" duration="2976000" />
+      <workItem from="1660441185315" duration="7975000" />
     </task>
     <servers />
   </component>

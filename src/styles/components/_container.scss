@@ -1,5 +1,7 @@
 .screens_component_div {
-  background: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
   width: auto;
   max-width: 70rem; /*1110px*/
   height: auto;
@@ -9,15 +11,11 @@
   border-radius: 0.625rem; /* 10px */
   margin: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
   z-index: 100;
   padding: 4vh;
   @media (max-width: 60rem) {
-  /* 950px */
-  //height: 95vh;
-  height: auto;
-  max-height: none;
-}
+    height: auto;
+    max-height: none;
+  }
 }

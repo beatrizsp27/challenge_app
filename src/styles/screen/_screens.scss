@@ -1,7 +1,30 @@
 .screens_root {
-	background-color: red;
+	background-color: white;
 }
 
 .screens_root p {
-	color: blue;
+	color: black;
+}
+
+.screens_card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 70rem; /*1110px*/
+	border-bottom: black;
+	border-bottom-width:medium;
+}
+
+.screens_container_card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start ;
+}
+
+.screens_card_row3 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center ;
 }
