@@ -7,7 +7,7 @@ import './styles/styles.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <NavigationMain />
-  </React.StrictMode>,
+	<React.StrictMode>
+		<NavigationMain />
+	</React.StrictMode>
 );
