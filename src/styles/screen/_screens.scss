@@ -1,30 +1,121 @@
-.screens_root {
-	background-color: white;
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #EEEEEE;
 }
 
-.screens_root p {
-	color: black;
+.screens_root {
+	margin: 0;
+	background-color: #EEEEEE;
 }
 
 .screens_card {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	max-width: 70rem; /*1110px*/
-	border-bottom: black;
-	border-bottom-width:medium;
+	max-width: 100%;
+	//border-bottom-size: 0.5px;
+	border-bottom-style: solid;
+	border-bottom-color: #EEEEEE;
+	margin-bottom: 16px;
+}
+
+
+.screens_title_header {
+	flex-direction: column;
+	justify-content: space-between;
+	width: auto;
+	max-width: 72%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	margin-bottom: 16px;
+	@media (max-width: 60rem) {
+		height: auto;
+		max-height: none;
+	}
+}
+
+.img_details {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+	height: 180px;
+}
+
+.screens_img {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start ;
+	width: 15%;
+	max-width: 15%;
+	margin: 16px;
 }
 
 .screens_container_card {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: flex-start ;
+	width: 55%;
+	max-width: 55%;
+}
+
+.screens_card_icon_title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center ;
 }
 
 .screens_card_row3 {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center ;
+	width: 10%;
+	max-width: 10%;
+}
+
+.grid-container {
+	display: grid;
+	flex-direction: column;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+}
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.screens_title {
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.screens_subtitle {
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.screens_title_body_header {
+	font-weight: 400;
+	font-size: 14px;
+	color: #999999;
+}
+
+.text_price {
+	margin-right: 6px;
+	font-weight: 400;
+	font-size: 24px;
 }

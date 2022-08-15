@@ -4,6 +4,7 @@ const s = {
     networkState: 'Ocurrió un problema con la conexión ',
     internalError: 'Error interno',
     notSupport: 'Método no soportados',
+    search: 'Nunca dejes de buscar'
 };
 
 export default s;

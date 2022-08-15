@@ -4,6 +4,8 @@ import { k } from '../../utils';
 import { GET_PRODUCT_SEARCH} from "../../api";
 import { getMessageError } from '../../api/config';
 import { ContainerComponent } from "../../component";
+import SearchComponent from "../../component/SearchComponent";
+import {icShipping} from "../../assets";
 
 const MainDashboardProduct = () => {
 
@@ -11,18 +13,20 @@ const MainDashboardProduct = () => {
 	const [errorMessage, setErrorMessage] = useState('');
 	const [arrayListProduct, setArrayListProduct] = useState([]);
 
-
-	useEffect(()=>{
-		getProductSearch('iphone')
-	}, []);
-
 	const getProductSearch = async (text) =>{
-		await GET_PRODUCT_SEARCH(
-			text,
-			onSuccessGetProductSearch,
-			onErrorGetProductSearch,
-			onDoneGetProductSearch
-		);
+		console.log("text.target.value_-----------"+ text);
+		if(text  && text.target && text.target.value){
+			console.log("text.target.value"+ text.target);
+			console.log("text.target.value"+ text.target.value);
+			await GET_PRODUCT_SEARCH(
+				text,
+				onSuccessGetProductSearch,
+				onErrorGetProductSearch,
+				onDoneGetProductSearch
+			);
+		}else {
+			setArrayListProduct([]);
+		}
 	};
 
 	const onSuccessGetProductSearch = response =>{
@@ -30,6 +34,7 @@ const MainDashboardProduct = () => {
 		if (success) {
 			if(data){
 				const {items} = data;
+				console.log("items" + JSON.stringify(items))
 				setArrayListProduct(items);
 			}
 		}
@@ -61,46 +66,58 @@ const MainDashboardProduct = () => {
 	}
 
 	return (
-		<>
-			<ContainerComponent>
+		<div>
+			<SearchComponent handleChange={(text)=>getProductSearch(text)}/>
+			<>
 				{
 					errorMessage &&  (
 						<h1>{errorMessage}</h1>
 					)
 				}
-				{arrayListProduct && arrayListProduct.length > 0 ? (
+				{arrayListProduct && arrayListProduct.length > 0 && (
 					<>
-						{arrayListProduct.map((item)=> {
+						<div className={'screens_title_body_header'}>
+							<label  className={'screens_title_header'}>{'Electronica > audio > video > ipno'} </label>
+						</div>
+						<ContainerComponent>
+							{arrayListProduct.map((item)=> {
 								console.log("item" + JSON.stringify(item.price))
 								if(item){
 									return (
 										<div onClick={() => goDetailsProduct(item.id)} key={item.id} className={'screens_card'}>
-											<div>
-												<img src={item.picture} alt={item.title} width="100" height="130"/>
+											<div className={'screens_img'}>
+												<img  src={item.picture} alt={item.title} width="180px" height="180px"/>
 											</div>
 											<div className={'screens_container_card'}>
 												{item.price && item.price.decimals && (
-													<h3>{`$${item.price.decimals}`} </h3>
+													<div className={'screens_card_icon_title'}>
+														<h3 className={'text_price'} >{`$ ${item.price.decimals}`} </h3>
+														{item.free_shipping && (
+															<img src={icShipping} alt={item.title} width="25px"
+																 height="25px"/>
+														)}
+													</div>
 												)}
-												{item.title && (
-													<h3 className={'screens_title'}>{item.title}</h3>
-												)}
+												<>
+													{item.title && (
+														<label className={'screens_title'}>{item.title}</label>
+													)}
+												</>
 											</div>
 											<div className={'screens_card_row3'}>
-												<h5>{item.free_shipping ? 'Capital Federal' : 'Mendoza'}</h5>
+												<h5 className={'screens_subtitle'} >{item.free_shipping ? 'Capital Federal' : 'Mendoza'}</h5>
 											</div>
 										</div>
 									)
 								}
 								return null;
 							})
-						}
+							}
+						</ContainerComponent>
 					</>
-				):(
-					<h1>No data</h1>
 				)}
-			</ContainerComponent>
-		</>
+			</>
+		</div>
 
 	);
 };
