@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from 'react';
+// eslint-disable-next-line
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { k } from '../../utils';
 import { GET_PRODUCT_SEARCH} from "../../api";
@@ -19,7 +20,7 @@ const MainDashboardProduct = () => {
 			console.log("text.target.value"+ text.target);
 			console.log("text.target.value"+ text.target.value);
 			await GET_PRODUCT_SEARCH(
-				text,
+				'iphone',
 				onSuccessGetProductSearch,
 				onErrorGetProductSearch,
 				onDoneGetProductSearch
@@ -81,7 +82,6 @@ const MainDashboardProduct = () => {
 						</div>
 						<ContainerComponent>
 							{arrayListProduct.map((item)=> {
-								console.log("item" + JSON.stringify(item.price))
 								if(item){
 									return (
 										<div onClick={() => goDetailsProduct(item.id)} key={item.id} className={'screens_card'}>
