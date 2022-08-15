@@ -3,7 +3,7 @@
   justify-content: space-between;
   background: white;
   width: auto;
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   overflow-y: auto;
   box-shadow: 0px 1.25rem 2.5rem rgba(0, 0, 0, 0.05);
@@ -11,7 +11,6 @@
   display: flex;
   position: relative;
   z-index: 100;
-  //padding: 4vh;
   @media (max-width: 60rem) {
     height: auto;
     max-height: none;

@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="019467b8-e34c-476c-a8ec-330dbd303ece" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/SearchComponent/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/SearchComponent/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/MainDashboardProduct/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MainDashboardProduct/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_container.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/components/_header_component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_header_component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/screen/_screen_details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/screen/_screen_details.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/screen/_screens.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/screen/_screens.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +100,7 @@
       <workItem from="1660441185315" duration="8477000" />
       <workItem from="1660454466896" duration="5684000" />
       <workItem from="1660528329040" duration="5000" />
-      <workItem from="1660528523505" duration="10216000" />
+      <workItem from="1660528523505" duration="12512000" />
     </task>
     <servers />
   </component>

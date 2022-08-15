@@ -24,12 +24,11 @@ body {
 	margin-bottom: 16px;
 }
 
-
 .screens_title_header {
 	flex-direction: column;
 	justify-content: space-between;
 	width: auto;
-	max-width: 72%;
+	max-width: 80%;
 	height: auto;
 	margin: auto;
 	display: flex;
@@ -39,6 +38,7 @@ body {
 		max-height: none;
 	}
 }
+
 
 .img_details {
 	display: block;

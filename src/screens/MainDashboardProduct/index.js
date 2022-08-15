@@ -68,7 +68,7 @@ const MainDashboardProduct = () => {
 
 	return (
 		<div>
-			<SearchComponent handleChange={(text)=>getProductSearch(text)}/>
+			<SearchComponent arrayListProduct={arrayListProduct} handleChange={(text)=>getProductSearch(text)}/>
 			<>
 				{
 					errorMessage &&  (
@@ -77,9 +77,6 @@ const MainDashboardProduct = () => {
 				}
 				{arrayListProduct && arrayListProduct.length > 0 && (
 					<>
-						<div className={'screens_title_body_header'}>
-							<label  className={'screens_title_header'}>{'Electronica > audio > video > ipno'} </label>
-						</div>
 						<ContainerComponent>
 							{arrayListProduct.map((item)=> {
 								if(item){
@@ -100,7 +97,10 @@ const MainDashboardProduct = () => {
 												)}
 												<>
 													{item.title && (
-														<label className={'screens_title'}>{item.title}</label>
+														<>
+															<label className={'screens_title'}>{item.title}</label>
+															<label className={'screens_title'}>Completo Unico!</label>
+														</>
 													)}
 												</>
 											</div>
