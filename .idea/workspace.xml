@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="019467b8-e34c-476c-a8ec-330dbd303ece" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__test__/testSuitesServices/api.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuitesServices/apiGetProductById.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CardComponent/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ContainerComponent/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ContainerComponent/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/screens/MainDashboardProduct/index.js" root0="FORCE_HIGHLIGHTING" />
@@ -68,86 +79,79 @@
       <recent name="$PROJECT_DIR$/src/__test__" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.* TestSuiteService.TestSuiteService-recuperarProducto-medianteId.TestSuiteService-TestSuiteService-recuperarProducto-medianteId-null">
-    <configuration name="* TestSuiteService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.* MainDetailsProductScreen">
+    <configuration name="* ContainerComponent (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/__test__/testSuitesServices/api.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__test__/textSuitesComponents/searchSuiteComponent.text.js" />
       <test-names>
-        <test-name value="* TestSuiteService" />
+        <test-name value="* ContainerComponent" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="* TestSuiteService.TestSuiteService-recuperarCatalogoMunicipioPorClaveEstado.TestSutesServicioCatalogos-recuperarProductoMedianteId-respuestaExitosa" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__test__/testSuitesServices/api.test.js" />
-      <test-names>
-        <test-name value="* TestSuiteService" />
-        <test-name value="TestSuiteService-recuperarCatalogoMunicipioPorClaveEstado" />
-        <test-name value="TestSutesServicioCatalogos-recuperarProductoMedianteId-respuestaExitosa" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="* TestSuiteService.TestSuiteService-recuperarProducto-medianteId" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="* ContainerComponent (2)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/__test__/testSuitesServices/api.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__test__/textSuitesComponents/searchSuiteComponent.test.js" />
       <test-names>
-        <test-name value="* TestSuiteService" />
-        <test-name value="TestSuiteService-recuperarProducto-medianteId" />
+        <test-name value="* ContainerComponent" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="* TestSuiteService.TestSuiteService-recuperarProducto-medianteId.TestSuiteService-TestSuiteService-recuperarProducto-medianteId-Error" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="* ContainerComponent" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__test__/testSuitesServices/api.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__test__/textSuitesComponents/containerComponents.test.js" />
       <test-names>
-        <test-name value="* TestSuiteService" />
-        <test-name value="TestSuiteService-recuperarProducto-medianteId" />
-        <test-name value="TestSuiteService-TestSuiteService-recuperarProducto-medianteId-Error" />
+        <test-name value="* ContainerComponent" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="* TestSuiteService.TestSuiteService-recuperarProducto-medianteId.TestSuiteService-TestSuiteService-recuperarProducto-medianteId-null" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="* MainDetailsProductScreen" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__test__/testSuitesServices/api.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDetailsProduct.test.js" />
       <test-names>
-        <test-name value="* TestSuiteService" />
-        <test-name value="TestSuiteService-recuperarProducto-medianteId" />
-        <test-name value="TestSuiteService-TestSuiteService-recuperarProducto-medianteId-null" />
+        <test-name value="* MainDetailsProductScreen" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="* TestSuiteService- getProductSearch" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__test__/testSuitesServices/apiGetProductSearch.test.js" />
+      <test-names>
+        <test-name value="* TestSuiteService- getProductSearch" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.* TestSuiteService.TestSuiteService-recuperarProducto-medianteId.TestSuiteService-TestSuiteService-recuperarProducto-medianteId-null" />
-        <item itemvalue="Jest.* TestSuiteService.TestSuiteService-recuperarProducto-medianteId.TestSuiteService-TestSuiteService-recuperarProducto-medianteId-Error" />
-        <item itemvalue="Jest.* TestSuiteService" />
-        <item itemvalue="Jest.* TestSuiteService.TestSuiteService-recuperarProducto-medianteId" />
-        <item itemvalue="Jest.* TestSuiteService.TestSuiteService-recuperarCatalogoMunicipioPorClaveEstado.TestSutesServicioCatalogos-recuperarProductoMedianteId-respuestaExitosa" />
+        <item itemvalue="Jest.* MainDetailsProductScreen" />
+        <item itemvalue="Jest.* ContainerComponent" />
+        <item itemvalue="Jest.* ContainerComponent (2)" />
+        <item itemvalue="Jest.* ContainerComponent (1)" />
+        <item itemvalue="Jest.* TestSuiteService- getProductSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +171,7 @@
       <workItem from="1660454466896" duration="5684000" />
       <workItem from="1660528329040" duration="5000" />
       <workItem from="1660528523505" duration="12798000" />
-      <workItem from="1660694261021" duration="10072000" />
+      <workItem from="1660694261021" duration="13033000" />
     </task>
     <servers />
   </component>
