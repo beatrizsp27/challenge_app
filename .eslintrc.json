@@ -26,6 +26,7 @@
 		"no-unused-expressions": "warn",
 		"no-unused-vars": "warn",
 		"semi-spacing": 2,
-		"react/prop-types": "off"
+		"react/prop-types": "off",
+		"no-undef": "warn"
 	}
 }
