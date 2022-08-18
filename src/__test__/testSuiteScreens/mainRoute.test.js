@@ -28,8 +28,6 @@ describe("MainRootScreen", ()=>{
 
     })
 
-
-
     /** SE RENDERIZA EL COMPONENTE CASO DE PRUEB Y VALIDAR QUE NO SE HAGAN CAMBIOS QUE NO SEAN NECESARIOS**/
     test("Se crea el snap", () => {
         const tree = renderer.create(

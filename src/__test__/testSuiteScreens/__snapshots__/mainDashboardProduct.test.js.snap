@@ -1,35 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`* MainDashboardProductScreen Se crea el snap 1`] = `
-<div>
-  <div
-    className="screens_details_header"
-  >
-    <div>
-      <img
-        className="box_img_mel"
-        src="Logo_ML@2x.png.png"
-      />
-    </div>
-    <input
-      className="box_input_text"
-      onChange={[Function]}
-      placeholder="Nunca dejes de buscar"
-      type="search"
-    />
-    <div
-      className="box_search_icon"
-    >
-      <img
-        alt=""
-        className="box_img"
-        src="ic_Search@2x.png.png"
-      />
-    </div>
-  </div>
-</div>
-`;
-
 exports[`MainDashboardProductScreen Se crea el snap 1`] = `
 <div>
   <div

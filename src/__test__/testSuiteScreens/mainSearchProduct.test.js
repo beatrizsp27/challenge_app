@@ -1,5 +1,5 @@
 import React from "react";
-import { MainSearchProductScreen } from '../../screens';
+import {MainDashboardProductScreen, MainSearchProductScreen} from '../../screens';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
 import {BrowserRouter as Router} from 'react-router-dom';

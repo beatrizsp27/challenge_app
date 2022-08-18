@@ -1,10 +1,10 @@
 import React from "react";
-import { MainDashboardProductScreen } from '../../screens';
+import {MainDashboardProductScreen} from '../../screens';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
 import {BrowserRouter as Router} from 'react-router-dom';
 
-import {shallow, mount, configure} from "enzyme";
+import {shallow, configure} from "enzyme";
 configure({ adapter: new Adapter() })
 
 describe("MainDashboardProductScreen", ()=>{
@@ -13,10 +13,7 @@ describe("MainDashboardProductScreen", ()=>{
     let wrapperMainDasboardProduct;
 
     beforeAll(()=>{
-        wrapperMainDasboardProduct = shallow
-        (<Router>
-            <MainDashboardProductScreen/>
-        </Router>);
+        wrapperMainDasboardProduct = shallow(<Router><MainDashboardProductScreen/></Router>);
     });
 
     /** SE RENDERIZA EL COMPONENTE CASO DE PRUEBA**/

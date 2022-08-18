@@ -1,5 +1,5 @@
 import React from "react";
-import { MainDetailsProductScreen } from '../../screens';
+import {MainDetailsProductScreen} from '../../screens';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
 import {BrowserRouter as Router} from 'react-router-dom';
@@ -10,10 +10,10 @@ configure({ adapter: new Adapter() })
 describe("MainDetailsProductScreen", ()=>{
 
     /** SE DECLARA UNA VARABLES**/
-    let MainDetailsProductScreen;
+    let mainDetailsProductScreen;
 
     beforeAll(()=>{
-        MainDetailsProductScreen = shallow(
+        mainDetailsProductScreen = shallow(
             <Router>
                <MainDetailsProductScreen/>
             </Router>
@@ -23,19 +23,20 @@ describe("MainDetailsProductScreen", ()=>{
     // SE RENDERIZA EL COMPONENTE CASO DE PRUEBA
     test("renderear correctamente", () => {
         // ESPERANDO QUE WAPER ESTE DEFENIDO Y QUE EXISTA
-        expect(MainDetailsProductScreen).toBeTruthy()
+        expect(mainDetailsProductScreen).toBeTruthy()
 
     })
 
-    // SE RENDERIZA EL COMPONENTE CASO DE PRUEBA
+    /** SE RENDERIZA EL COMPONENTE CASO DE PRUEB Y VALIDAR QUE NO SE HAGAN CAMBIOS QUE NO SEAN NECESARIOS**/
     test("Se crea el snap", () => {
-        const treeMainDetailsProductScreen = renderer.create(
+        const tree = renderer.create(
             <Router>
-               <MainDetailsProductScreen/>
+                <MainDetailsProductScreen/>
             </Router>
         ).toJSON();
-        expect(treeMainDetailsProductScreen).toMatchSnapshot();
+        expect(tree).toMatchSnapshot();
     })
+
 });
 
 
