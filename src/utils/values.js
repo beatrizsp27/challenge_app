@@ -2,6 +2,8 @@ const k = {
 	navigations: {
 		product: '/',
 		detailsProduct: '/items/',
+		productItem: '/items',
+		all: '*'
 	},
 };
 

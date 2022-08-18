@@ -1,26 +1,29 @@
 // eslint-disable-next-line
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { k } from '../../utils';
 import { GET_PRODUCT_SEARCH} from "../../api";
 import { getMessageError } from '../../api/config';
 import { ContainerComponent } from "../../component";
-import SearchComponent from "../../component/SearchComponent";
 import {icShipping} from "../../assets";
 
 const MainDashboardProduct = () => {
-
+	/** HOOKS **/
 	const navigate = useNavigate();
-	const [errorMessage, setErrorMessage] = useState('');
+	const [errorMessage, setErrorMessage] = useState(null);
 	const [arrayListProduct, setArrayListProduct] = useState([]);
+	const { search } = useLocation();
 
-	const getProductSearch = async (text) =>{
-		console.log("text.target.value_-----------"+ text);
-		if(text  && text.target && text.target.value){
-			console.log("text.target.value"+ text.target);
-			console.log("text.target.value"+ text.target.value);
+	useEffect(()=>{
+		getProductSearch()
+	}, []);
+
+	const getProductSearch = async () =>{
+		const queryParams = new URLSearchParams(search)
+		const textSearch = queryParams.get("search")
+		if(textSearch){
 			await GET_PRODUCT_SEARCH(
-				'iphone',
+				textSearch,
 				onSuccessGetProductSearch,
 				onErrorGetProductSearch,
 				onDoneGetProductSearch
@@ -48,17 +51,15 @@ const MainDashboardProduct = () => {
 					data: { message }
 				}
 			} = error;
-			showError(message || getMessageError(error));
+			showMessageError(message || getMessageError(error));
 		} else {
-			showError(getMessageError(error));
+			showMessageError(getMessageError(error));
 		}
 	};
 
-	const onDoneGetProductSearch = () =>{
-		setErrorMessage(null);
-	}
+	const onDoneGetProductSearch = () =>{}
 
-	const showError = message => {
+	const showMessageError = message => {
 		setErrorMessage(message);
 	};
 
@@ -68,13 +69,21 @@ const MainDashboardProduct = () => {
 
 	return (
 		<div>
-			<SearchComponent arrayListProduct={arrayListProduct} handleChange={(text)=>getProductSearch(text)}/>
+			<div className={'screens_title_header'}>
+				<label  className={'screens_title_body_header'}>{'Electronica > audio > video > iphone'} </label>
+			</div>
 			<>
-				{
-					errorMessage &&  (
-						<h1>{errorMessage}</h1>
-					)
-				}
+				<ContainerComponent>
+					<div className={'screens_app_root'}>
+						{errorMessage &&  (
+							<>
+								<label>Error</label>
+								<h1 className={'screens_title_error'}>{errorMessage}</h1>
+
+							</>
+						)}
+					</div>
+				</ContainerComponent>
 				{arrayListProduct && arrayListProduct.length > 0 && (
 					<>
 						<ContainerComponent>

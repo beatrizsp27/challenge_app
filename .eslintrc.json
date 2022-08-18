@@ -24,7 +24,7 @@
 	"plugins": ["react"],
 	"rules": {
 		"no-unused-expressions": "warn",
-		"no-unused-vars": "warn",
+		"no-unused-vars": "off",
 		"semi-spacing": 2,
 		"react/prop-types": "off",
 		"no-undef": "warn"

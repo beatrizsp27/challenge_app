@@ -1,10 +1,14 @@
-// import './App.css';
+import {ContainerComponent} from "./component";
 
 function App() {
     return (
-        <div className="App">
-            <h1>Hola mundo</h1>
-        </div>
+        <ContainerComponent>
+            <div className={'screens_app_root'} >
+                <h1>Error 404</h1>
+                <label>La pagina que buscas no existe o fue cambiada de lugar</label>
+            </div>
+        </ContainerComponent>
+
     );
 }
 

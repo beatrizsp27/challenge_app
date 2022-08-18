@@ -3,13 +3,11 @@ import { useNavigate , useParams} from 'react-router-dom';
 import { getMessageError } from '../../api/config';
 import {GET_PRODUCT_BY_ID} from '../../api'
 import {ContainerComponent} from "../../component";
-import SearchComponent from "../../component/SearchComponent";
 
 const MainDetailsProduct = () => {
 	/** HOOKS GENERALES */
 	const navigate = useNavigate();
 	const params = useParams();
-	console.log("params" + JSON.stringify(params));
 
 	/** HOOKS VARIABLES */
 	const [errorMessage, setErrorMessage] = useState('');
@@ -43,14 +41,12 @@ const MainDetailsProduct = () => {
 		if (success) {
 			if(data){
 				const {item} = data;
-				console.log("item::: " + JSON.stringify(data))
 				setProduct(item);
 			}
 		}
 	};
 
 	const onErrorGetDetailsProduct = error =>{
-		console.log("error::: " + JSON.stringify(error))
 		if (error && error.response && error.response.data) {
 			const {
 				response: {
@@ -64,7 +60,7 @@ const MainDetailsProduct = () => {
 	};
 
 	const onDoneGetDetailsProduct = () =>{
-		setErrorMessage(null);
+		// setErrorMessage(null);
 	}
 
 	const showError = message => {
@@ -73,10 +69,12 @@ const MainDetailsProduct = () => {
 
 	return (
 		<>
-			<SearchComponent/>
+			<div className={'screens_title_header'}>
+				<label  className={'screens_title_body_header'}>{'Electronica > audio > video > iphone'} </label>
+			</div>
 			<ContainerComponent>
 				{errorMessage &&  (
-					<h1>{errorMessage}</h1>
+					<h1 className={'screens_title_error'}>{errorMessage}</h1>
 				)}
 				{product && (
 					<div>

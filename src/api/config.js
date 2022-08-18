@@ -29,7 +29,7 @@ export const getMessageError = (error) => {
         if (error.error) {
             return error.error.title + stringTrim + error.error.message;
         }
-        return s.errorGeneral;
+        return s.errorGeneral + error;
     }
 };
 
