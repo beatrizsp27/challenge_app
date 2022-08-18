@@ -26,3 +26,33 @@ exports[`* ContainerComponent Se crea el snap 1`] = `
   </div>
 </div>
 `;
+
+exports[`ContainerComponent Se crea el snap 1`] = `
+<form>
+  <div
+    className="screens_details_header"
+  >
+    <div>
+      <img
+        className="box_img_mel"
+        src="Logo_ML@2x.png.png"
+      />
+    </div>
+    <input
+      className="box_input_text"
+      name="search"
+      placeholder="Nunca dejes de buscar"
+      type="search"
+    />
+    <div
+      className="box_search_icon"
+    >
+      <img
+        alt=""
+        className="box_img_mel"
+        src="ic_Search@2x.png.png"
+      />
+    </div>
+  </div>
+</form>
+`;

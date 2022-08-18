@@ -9,6 +9,7 @@ const MainSearchProduct = () => {
     const [textSearch, setTextSearch] = useState(null);
     const navigate = useNavigate();
     const handleChange = (text) =>{
+        text.preventDefault();
         if(text && text.target && text.target.value){
             setTextSearch(text.target.value);
         }else {

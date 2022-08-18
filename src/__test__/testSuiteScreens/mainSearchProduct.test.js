@@ -1,41 +1,36 @@
 import React from "react";
-import { MainDashboardProductScreen } from '../../screens';
+import { MainSearchProductScreen } from '../../screens';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
 import {BrowserRouter as Router} from 'react-router-dom';
 
-import {shallow, mount, configure} from "enzyme";
+import {shallow, configure} from "enzyme";
 configure({ adapter: new Adapter() })
 
-describe("MainDashboardProductScreen", ()=>{
+describe("MainSearchProductScreen", ()=>{
 
     /** SE DECLARA UNA VARABLES**/
-    let wrapperMainDasboardProduct;
+    let wrapperMainSearchProductScreen;
 
     beforeAll(()=>{
-        wrapperMainDasboardProduct = shallow
+        wrapperMainSearchProductScreen = shallow
         (<Router>
-            <MainDashboardProductScreen/>
+            <MainSearchProductScreen/>
         </Router>);
     });
 
     /** SE RENDERIZA EL COMPONENTE CASO DE PRUEBA**/
     test("renderear correctamente", () => {
         /** ESPERANDO QUE WAPER ESTE DEFENIDO Y QUE EXISTA**/
-        expect(wrapperMainDasboardProduct).toBeTruthy()
+        expect(wrapperMainSearchProductScreen).toBeTruthy()
 
-    });
-
-    test('Validar que no encuentre ningun nodo', ()=>{
-        /** SE VALDIA QUE EXISTA EL NODO DONDE SE ESNCUNTRA EL CLIC**/
-        expect(wrapperMainDasboardProduct.find('div').at(1)).toHaveLength(0);
-    });
+    })
 
     /** SE RENDERIZA EL COMPONENTE CASO DE PRUEBA**/
     test("Se crea el snap", () => {
         const tree = renderer.create(
             <Router>
-                <MainDashboardProductScreen/>
+                <MainSearchProductScreen/>
             </Router>
         ).toJSON();
         expect(tree).toMatchSnapshot();
