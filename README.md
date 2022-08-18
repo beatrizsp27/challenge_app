@@ -16,6 +16,7 @@
 - Visual Studio Code (versión: 1.45.1)
 - Sistema operativo en MacBook o Mac: macOS Big Sur 11.6.1
 - Navegador web (chrome, firefox ,etc)
+- React [Create React App](https://github.com/facebook/create-react-app).
 
 ## Estructura de carpetas del proyecto
 

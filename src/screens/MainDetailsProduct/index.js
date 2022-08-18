@@ -3,6 +3,7 @@ import { useNavigate , useParams} from 'react-router-dom';
 import { getMessageError } from '../../api/config';
 import {GET_PRODUCT_BY_ID} from '../../api'
 import {ContainerComponent} from "../../component";
+import {amountFormat} from "../../utils/utilsFormat";
 
 const MainDetailsProduct = () => {
 	/** HOOKS GENERALES */
@@ -70,37 +71,38 @@ const MainDetailsProduct = () => {
 			<div className={'screens_title_header'}>
 				<label  className={'screens_title_body_header'}>{'Electronica > audio > video > iphone'} </label>
 			</div>
-			<ContainerComponent>
+			{errorMessage &&  (
 				<div className={'screens_app_root'}>
-					{errorMessage &&  (
-						<>
-							<label>Error</label>
-							<h1 className={'screens_title_error'}>{errorMessage}</h1>
+					<>
+						<label>Error</label>
+						<h1 className={'screens_title_error'}>{errorMessage}</h1>
 
-						</>
-					)}
+					</>
 				</div>
+			)}
+			<ContainerComponent>
 				{product && (
 					<div>
 						<div className={'screens_details_root'}>
-							<div>
+							<div className={'screens_img_details_product'}>
 								<img className={'screen_img_details'} src={product.picture} alt={product.title} />
 							</div>
-							<div>
+							<div className={'screens_text_details_product'}>
 								{product.condition && (
 									<div className={'screens_title_container'}>
-										<p className={'title_condition'}>{product.condition === 'new' ? 'Nuevo':product.condition }</p>
-										<p className={'title_condition'}>{` / ${product.sold_quantity} Vendidos`}</p>
+										<label className={'title_condition'}>{product.condition === 'new' ? 'Nuevo':product.condition }</label>
+										<label className={'title_condition'}>{` / ${product.sold_quantity} Vendidos`}</label>
 									</div>
-
 								)}
 								{product.title && (
-									<p className={'screen_title_detail'}>{product.title}</p>
+									<label className={'screen_title_detail'}>{product.title}</label>
 								)}
 								{product.price && product.price.decimals && (
-									<p className={'screen_title_price'} >{`$${product.price.decimals}`} </p>
+									<label className={'screen_title_price'} >{amountFormat(product.price.decimals)} </label>
 								)}
-								<button className={'screen_details_button'} onClick={() => goBack()}>Comprar</button>
+								<div className={'screens_details_bottom'}>
+									<button className={'screen_details_button'} onClick={() => goBack()}>Comprar</button>
+								</div>
 							</div>
 						</div>
 						<div className={'screen_details_description'}>

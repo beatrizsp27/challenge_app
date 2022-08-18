@@ -16,11 +16,10 @@ body {
 .screens_card {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	max-width: 100%;
 	border-bottom-style: solid;
 	border-bottom-color: #EEEEEE;
-	margin-bottom: 16px;
 }
 
 .screens_title_header {
@@ -47,19 +46,20 @@ body {
 	height: 180px;
 }
 
-.screens_img {
+.screen_img {
+	width:180px;
+	height:180px;
+	border-radius: 4px
+}
+
+.screens_img_product {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start ;
+	align-items: center;
 	width: 15%;
 	max-width: 15%;
 	margin: 16px;
-}
-
-.screen_img {
-	width:180px;
-	height:180px
 }
 
 .screens_container_card {
@@ -67,15 +67,12 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start ;
-	width: 55%;
-	max-width: 55%;
-}
-
-.screens_card_icon_title {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center ;
+	width: 70%;
+	max-width: 70%;
+	@media (max-width: 60rem) {
+		width: 55%;
+		max-width: 70%;
+	}
 }
 
 .screens_card_row3 {
@@ -85,6 +82,14 @@ body {
 	align-items: center ;
 	width: 10%;
 	max-width: 10%;
+}
+
+
+.screens_card_icon_title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center ;
 }
 
 .grid-container {
@@ -136,23 +141,30 @@ body {
 		height:90px
 	}
 	.text_price {
+		margin-right: 6px;
+		font-weight: 400;
 		font-size: 14px;
 	}
 
 	.screens_title_error {
+		font-weight: 400;
 		font-size: 8px;
 	}
 
 	.screens_title {
+		font-weight: 400;
 		font-size: 11px;
 	}
 
 	.screens_subtitle {
+		font-weight: 400;
 		font-size: 8px;
 	}
 
 	.screens_title_body_header {
 		font-size: 8px;
+		font-weight: 400;
+		color: #999999;
 	}
 }
 
@@ -162,22 +174,29 @@ body {
 		height:90px
 	}
 	.text_price {
+		margin-right: 6px;
+		font-weight: 400;
 		font-size: 15px;
 	}
 
 	.screens_title_error {
+		font-weight: 400;
 		font-size: 9px;
 	}
 
 	.screens_title {
+		font-weight: 400;
 		font-size: 12px;
 	}
 
 	.screens_subtitle {
+		font-weight: 400;
 		font-size: 9px;
 	}
 
 	.screens_title_body_header {
+		font-weight: 400;
+		color: #999999;
 		font-size: 9px;
 	}
 }

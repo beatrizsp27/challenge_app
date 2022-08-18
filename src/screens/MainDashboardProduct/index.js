@@ -6,6 +6,7 @@ import { GET_PRODUCT_SEARCH} from "../../api";
 import { getMessageError } from '../../api/config';
 import { ContainerComponent } from "../../component";
 import {icShipping} from "../../assets";
+import {amountFormat} from "../../utils/utilsFormat";
 
 const MainDashboardProduct = () => {
 	/** HOOKS **/
@@ -72,17 +73,16 @@ const MainDashboardProduct = () => {
 				<label  className={'screens_title_body_header'}>{'Electronica > audio > video > iphone'} </label>
 			</div>
 			<>
+				{errorMessage &&  (
 				<ContainerComponent>
 					<div className={'screens_app_root'}>
-						{errorMessage &&  (
-							<>
-								<label>Error</label>
-								<h1 className={'screens_title_error'}>{errorMessage}</h1>
-
-							</>
-						)}
+						<>
+							<label>Error</label>
+							<h1 className={'screens_title_error'}>{errorMessage}</h1>
+						</>
 					</div>
 				</ContainerComponent>
+				)}
 				{arrayListProduct && arrayListProduct.length > 0 && (
 					<>
 						<ContainerComponent>
@@ -90,13 +90,13 @@ const MainDashboardProduct = () => {
 								if(item){
 									return (
 										<div onClick={() => goDetailsProduct(item.id)} key={item.id} className={'screens_card'}>
-											<div className={'screens_img'}>
+											<div className={'screens_img_product'}>
 												<img className={'screen_img'} src={item.picture} alt={item.title}/>
 											</div>
 											<div className={'screens_container_card'}>
 												{item.price && item.price.decimals && (
 													<div className={'screens_card_icon_title'}>
-														<h3 className={'text_price'} >{`$ ${item.price.decimals}`} </h3>
+														<h3 className={'text_price'} >{amountFormat(item.price.decimals)} </h3>
 														{item.free_shipping && (
 															<img src={icShipping} alt={item.title} width="25px"
 																 height="25px"/>
