@@ -1,33 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`* ContainerComponent Se crea el snap 1`] = `
-<div
-  className="screens_details_header"
->
-  <div>
-    <img
-      className="box_img_mel"
-      src="Logo_ML@2x.png.png"
-    />
-  </div>
-  <input
-    className="box_input_text"
-    placeholder="Nunca dejes de buscar"
-    type="search"
-  />
-  <div
-    className="box_search_icon"
-  >
-    <img
-      alt=""
-      className="box_img"
-      src="ic_Search@2x.png.png"
-    />
-  </div>
-</div>
-`;
-
-exports[`ContainerComponent Se crea el snap 1`] = `
+exports[`ContainerComponent Se crea el snap despues de las pruebas 1`] = `
 <form>
   <div
     className="screens_details_header"

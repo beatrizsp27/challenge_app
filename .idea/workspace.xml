@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="019467b8-e34c-476c-a8ec-330dbd303ece" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDashboardProduct.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDashboardProduct.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDashboardProduct.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDashboardProduct.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDetailsProduct.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDetailsProduct.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__test__/testSuitesServices/apiGetProductById.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuitesServices/apiGetProductById.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__test__/testSuitesServices/apiGetProductSearch.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuitesServices/apiGetProductSearch.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/__test__/textSuitesComponents/__snapshots__/searchSuiteComponent.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/textSuitesComponents/__snapshots__/searchSuiteComponent.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/textSuitesComponents/searchSuiteComponent.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/textSuitesComponents/searchSuiteComponent.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/SearchComponent/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/SearchComponent/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/MainSearhProduct/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MainSearhProduct/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

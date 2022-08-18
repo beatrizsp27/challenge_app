@@ -15,7 +15,6 @@ describe("* TestSuiteService", ()=>{
     })
 
     describe('TestSuiteService-recuperarProducto-medianteId', () => {
-        console.log('Inicio-Describe-TestSuiteService-recuperarProducto-medianteId')
         it('TestSuiteService-TestSuiteService-recuperarProducto-medianteId', async () => {
 
             /** RESPUESTA */
@@ -66,7 +65,6 @@ describe("* TestSuiteService", ()=>{
             };
 
             await GET_PRODUCT_BY_ID(id, onSuccessGetProduct, onError, onDone);
-            console.log('Fin-TestSuiteService-recuperarProducto-medianteId')
         })
 
         it('TestSuiteService-TestSuiteService-recuperarProducto-medianteId-Error', async () => {
@@ -99,7 +97,6 @@ describe("* TestSuiteService", ()=>{
             };
 
             await GET_PRODUCT_BY_ID(id, onSuccessGetProduct, onError, onDone);
-            console.log('Fin-TestSuiteService-recuperarProducto-medianteId')
         })
 
         it('TestSuiteService-TestSuiteService-recuperarProducto-medianteId-null', async () => {
@@ -152,7 +149,6 @@ describe("* TestSuiteService", ()=>{
             };
 
             await GET_PRODUCT_BY_ID(id, onSuccessGetProductNull, onError, onDone);
-            console.log('Fin-TestSuiteService-recuperarProducto-medianteId')
         })
     })
 })

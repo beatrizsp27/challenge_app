@@ -106,7 +106,6 @@ describe("* TestSuiteService- getProductSearch", ()=>{
             };
 
             await GET_PRODUCT_SEARCH(text, onSuccessGetProduct, onError, onDone);
-            console.log('Fin-TestSuiteService-TestSuiteService-SearchProduct')
         })
 
         it('TestSuiteService-TestSuiteService-SearchProduct-Error', async () => {
@@ -139,7 +138,6 @@ describe("* TestSuiteService- getProductSearch", ()=>{
             };
 
             await GET_PRODUCT_SEARCH(text, onSuccessGetProduct, onError, onDone);
-            console.log('Fin-TestSuiteService-SearchProduct')
         })
 
         it('TestSuiteService-TestSuiteService-SearchProduct-null', async () => {
@@ -192,7 +190,6 @@ describe("* TestSuiteService- getProductSearch", ()=>{
             };
 
             await GET_PRODUCT_SEARCH(text, onSuccessGetProductNull, onError, onDone);
-            console.log('Fin-TestSuiteService-SearchProduct')
         })
     })
 })
