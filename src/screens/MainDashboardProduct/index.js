@@ -91,7 +91,7 @@ const MainDashboardProduct = () => {
 									return (
 										<div onClick={() => goDetailsProduct(item.id)} key={item.id} className={'screens_card'}>
 											<div className={'screens_img'}>
-												<img  src={item.picture} alt={item.title} width="180px" height="180px"/>
+												<img className={'screen_img'} src={item.picture} alt={item.title}/>
 											</div>
 											<div className={'screens_container_card'}>
 												{item.price && item.price.decimals && (

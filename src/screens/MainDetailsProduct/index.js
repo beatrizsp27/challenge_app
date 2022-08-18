@@ -11,16 +11,14 @@ const MainDetailsProduct = () => {
 
 	/** HOOKS VARIABLES */
 	const [errorMessage, setErrorMessage] = useState('');
-	const [loader, setIsLoader] = useState(false);
 	const [product, setProduct] = useState(null);
 
 	const goBack = () => {
-		navigate(-1);
+		navigate('/');
 	};
 
 	useEffect(()=>{
 		if (params && params.id) {
-			setIsLoader(true);
 			const { id } = params;
 			getDetailsProduct(id)
 		}
@@ -73,14 +71,20 @@ const MainDetailsProduct = () => {
 				<label  className={'screens_title_body_header'}>{'Electronica > audio > video > iphone'} </label>
 			</div>
 			<ContainerComponent>
-				{errorMessage &&  (
-					<h1 className={'screens_title_error'}>{errorMessage}</h1>
-				)}
+				<div className={'screens_app_root'}>
+					{errorMessage &&  (
+						<>
+							<label>Error</label>
+							<h1 className={'screens_title_error'}>{errorMessage}</h1>
+
+						</>
+					)}
+				</div>
 				{product && (
 					<div>
 						<div className={'screens_details_root'}>
 							<div>
-								<img src={product.picture} alt={product.title} width="680px" height="auto"/>
+								<img className={'screen_img_details'} src={product.picture} alt={product.title} />
 							</div>
 							<div>
 								{product.condition && (
