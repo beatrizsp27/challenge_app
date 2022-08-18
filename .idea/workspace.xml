@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="019467b8-e34c-476c-a8ec-330dbd303ece" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDashboardProduct.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDashboardProduct.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDetailsProduct.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDetailsProduct.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDashboardProduct.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDashboardProduct.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDetailsProduct.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDetailsProduct.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainRoute.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainRoute.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainSearchProduct.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainSearchProduct.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,7 @@
       <recent name="$PROJECT_DIR$/src/__test__" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.MainDetailsProductScreen.Se crea el snap">
+  <component name="RunManager" selected="Jest.MainDetailsProductScreen">
     <configuration name="MainDashboardProductScreen" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -152,10 +147,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.MainDetailsProductScreen" />
         <item itemvalue="Jest.MainDetailsProductScreen.Se crea el snap" />
         <item itemvalue="Jest.MainDashboardProductScreen.Se crea el snap" />
         <item itemvalue="Jest.MainSearchProductScreen.Se crea el snap" />
-        <item itemvalue="Jest.MainDetailsProductScreen" />
         <item itemvalue="Jest.MainDashboardProductScreen" />
       </list>
     </recent_temporary>

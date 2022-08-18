@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Aplicación Challengue app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Índice de contenido
 
-## Available Scripts
+- [Requisitos: Tecnologías / IDES / Sistemas Operativos](#requisitos-tecnologías-ides-sistemas-operativos)
+- [Estructura de carpetas del proyecto](#estructura-de-carpetas-del-proyecto)
+- [Despliegue de proyecto](#despliegue-de-proyecto)
+- [End points de prueba](#end-point-de-pruebas)
+- [Autores del proyecto](#autores-del-proyecto)
 
-In the project directory, you can run:
 
-### `npm start`
+## Requisitos: Tecnologías / IDES / Sistemas Operativos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Node JS (versión v14.15.4)
+- npm (versión 6.14.10)
+- Visual Studio Code (versión: 1.45.1)
+- Sistema operativo en MacBook o Mac: macOS Big Sur 11.6.1
+- Navegador web (chrome, firefox ,etc)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Estructura de carpetas del proyecto
 
-### `npm test`
+- challengue_backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - **__mocks__** (Simuladores que ayudan a ejecutar pruebas unitarias)
+    - **__test__** (Carpeta que contiene las pruebas unitarias)
+    - **api** (Conntiene las clases de conexión a los servicios)
+    - **assets** (Contiene los recursos utilizados dentro de la aplicación )
+    - **componentes** (Contiene los componentes utilizados dentro de la aplicación)
+    - **navigation** (Carpeta que contiene las configuraciones del proyecto)
+    - **screens** (Contiene las pantallas de la aplicación)
+    - **strings** (Contiene los valores de los textos contenido en la app)
+    - **styles** (Contiene los estilos de la aplicación)
+    - **utils** (Contiene todas aquellas herramientas que son requeridas dentro de la aplicacion)
+    - **index.js** (Archivo inicial  de la aplicación)
 
-### `npm run build`
+## Despliegue de proyecto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Se deberán seguir los siguientes paso para poder ejecuatar el proyecto.
+  - 1.- Ejecutar `npm install`  a nivel root del proyecto para instalar los componentes requeridos.
+  - 2.- Ejecutar `npm run start`  a nivel root del proyecto para ejecutar el proyecto .
+  - 3.- Copiar la siguiente url en un navegador [http://localhost:3000](http://localhost:3000) en caso de que no se abra
+  
+## Ejecución de pruebas unitarias
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Para ejecutar las pruebas se debera ejecutar el siguiente comando .
+  - `npm run test` para obtener el menu de opciones de pruebas.
+  - `npm run test a` para ejecutar todas las pruebas unitarias.
+  - `npm run test u` En caso de que falle alguna prueba de snaps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
+## Autores del proyecto
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Beatriz Herández Hernández - Desarrollador Front end
