@@ -38,7 +38,6 @@ const MainDashboardProduct = () => {
 		if (success) {
 			if(data){
 				const {items} = data;
-				console.log("items" + JSON.stringify(items))
 				setArrayListProduct(items);
 			}
 		}
