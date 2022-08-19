@@ -1,4 +1,4 @@
-# Aplicación Challengue app
+# Aplicación Challenge app
 
 ## Índice de contenido
 
