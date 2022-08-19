@@ -4,7 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { k } from '../../utils';
 import { GET_PRODUCT_SEARCH} from "../../api";
 import { getMessageError } from '../../api/config';
-import { ContainerComponent } from "../../component";
+import { ContainerComponent, CategoriesComponent } from "../../component";
 import {icShipping} from "../../assets";
 import {amountFormat} from "../../utils/utilsFormat";
 
@@ -13,6 +13,7 @@ const MainDashboardProduct = () => {
 	const navigate = useNavigate();
 	const [errorMessage, setErrorMessage] = useState(null);
 	const [arrayListProduct, setArrayListProduct] = useState([]);
+	const [categoriesArray, setCategoriesArray] = useState([]);
 	const { search } = useLocation();
 
 	useEffect(()=>{
@@ -38,8 +39,9 @@ const MainDashboardProduct = () => {
 		const { data, success } = response.data;
 		if (success) {
 			if(data){
-				const {items} = data;
+				const {items, categories} = data;
 				setArrayListProduct(items);
+				setCategoriesArray(categories)
 			}
 		}
 	};
@@ -64,14 +66,15 @@ const MainDashboardProduct = () => {
 	};
 
 	const goDetailsProduct = (id) => {
-		navigate(`${k.navigations.detailsProduct}${id}`);
+		navigate(`${k.navigations.detailsProduct}${id}`, {
+			state: {
+				categoriesArray
+			}});
 	}
 
 	return (
 		<div>
-			<div className={'screens_title_header'}>
-				<label  className={'screens_title_body_header'}>{'Electronica > audio > video > iphone'} </label>
-			</div>
+			<CategoriesComponent categoriesArray={categoriesArray}/>
 			<>
 				{errorMessage &&  (
 				<ContainerComponent>

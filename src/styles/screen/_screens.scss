@@ -63,6 +63,29 @@ body {
 	margin: 16px;
 }
 
+.screens_category {
+	display: flex;
+	flex-direction: row;
+}
+
+.screens_component_category{
+	flex-direction: column;
+	justify-content: space-between;
+	width: auto;
+	max-width: 80%;
+	height: auto;
+	overflow-y: auto;
+	margin: auto;
+	display: flex;
+	margin-bottom: 16px;
+	@media (max-width: 60rem) {
+		max-width: 90%;
+		height: auto;
+		max-height: none;
+	}
+}
+
+
 .screens_container_card {
 	display: flex;
 	flex-direction: column;
@@ -122,7 +145,16 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	color: #999999;
+	margin-right: 20px;
 }
+
+.screens_title_body_header_bold {
+	font-weight: 800;
+	font-size: 14px;
+	color: #999999;
+	margin-left: 20px;
+}
+
 
 .text_price {
 	margin-right: 6px;

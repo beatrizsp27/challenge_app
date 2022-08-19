@@ -1,18 +1,20 @@
 import React, {useState,useEffect} from 'react';
-import { useNavigate , useParams} from 'react-router-dom';
+import { useNavigate , useParams, useLocation} from 'react-router-dom';
 import { getMessageError } from '../../api/config';
 import {GET_PRODUCT_BY_ID} from '../../api'
-import {ContainerComponent} from "../../component";
+import {ContainerComponent, CategoriesComponent} from "../../component";
 import {amountFormat} from "../../utils/utilsFormat";
 
 const MainDetailsProduct = () => {
 	/** HOOKS GENERALES */
 	const navigate = useNavigate();
 	const params = useParams();
+	const location = useLocation();
 
 	/** HOOKS VARIABLES */
 	const [errorMessage, setErrorMessage] = useState('');
 	const [product, setProduct] = useState(null);
+	const [categories, setCategories] = useState([]);
 
 	const goBack = () => {
 		navigate('/');
@@ -23,6 +25,10 @@ const MainDetailsProduct = () => {
 			const { id } = params;
 			getDetailsProduct(id)
 		}
+		if(location && location.state && location.state.categoriesArray){
+			setCategories(location.state.categoriesArray)
+		}
+
 	}, [])
 
 
@@ -58,9 +64,7 @@ const MainDetailsProduct = () => {
 		}
 	};
 
-	const onDoneGetDetailsProduct = () =>{
-		// setErrorMessage(null);
-	}
+	const onDoneGetDetailsProduct = () =>{}
 
 	const showError = message => {
 		setErrorMessage(message);
@@ -68,9 +72,7 @@ const MainDetailsProduct = () => {
 
 	return (
 		<>
-			<div className={'screens_title_header'}>
-				<label  className={'screens_title_body_header'}>{'Electronica > audio > video > iphone'} </label>
-			</div>
+			<CategoriesComponent categoriesArray={categories}/>
 			{errorMessage &&  (
 				<div className={'screens_app_root'}>
 					<>

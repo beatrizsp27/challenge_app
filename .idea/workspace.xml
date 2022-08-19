@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="019467b8-e34c-476c-a8ec-330dbd303ece" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDashboardProduct.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDashboardProduct.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDetailsProduct.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDetailsProduct.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainSearchProduct.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainSearchProduct.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/textSuitesComponents/__snapshots__/searchSuiteComponent.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/textSuitesComponents/__snapshots__/searchSuiteComponent.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/textSuitesComponents/searchSuiteComponent.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/textSuitesComponents/searchSuiteComponent.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MainDashboardProduct/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MainDashboardProduct/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/MainDetailsProduct/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MainDetailsProduct/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/screen/_screens.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/screen/_screens.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
