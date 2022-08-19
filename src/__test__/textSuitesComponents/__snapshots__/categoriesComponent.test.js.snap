@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wrapperCategorias Se crea el snap despues de las pruebas 1`] = `
+<div
+  className="screens_component_category"
+/>
+`;

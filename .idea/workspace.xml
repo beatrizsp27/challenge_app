@@ -3,16 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="019467b8-e34c-476c-a8ec-330dbd303ece" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDashboardProduct.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDashboardProduct.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDetailsProduct.test.js.snap" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/testSuiteScreens/__snapshots__/mainDetailsProduct.test.js.snap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/products/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/products/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/CategoriesComponent/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoriesComponent/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/MainDashboardProduct/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MainDashboardProduct/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/MainDetailsProduct/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MainDetailsProduct/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/MainSearhProduct/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/MainSearhProduct/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/_header_component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/components/_header_component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/screen/_screens.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/screen/_screens.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,31 +75,17 @@
       <recent name="$PROJECT_DIR$/src/__test__" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.MainDetailsProductScreen">
-    <configuration name="MainDashboardProductScreen" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.wrapperCategorias (1)">
+    <configuration name="ContainerComponent" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDashboardProduct.test.js" />
+      <test-file value="$PROJECT_DIR$/src/__test__/textSuitesComponents/categoriesComponent.text.js" />
       <test-names>
-        <test-name value="MainDashboardProductScreen" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="MainDashboardProductScreen.Se crea el snap" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainDashboardProduct.test.js" />
-      <test-names>
-        <test-name value="MainDashboardProductScreen" />
-        <test-name value="Se crea el snap" />
+        <test-name value="ContainerComponent" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -140,27 +116,39 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="MainSearchProductScreen.Se crea el snap" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="wrapperCategorias (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/__test__/testSuiteScreens/mainSearchProduct.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__test__/textSuitesComponents/categoriesComponent.test.js" />
       <test-names>
-        <test-name value="MainSearchProductScreen" />
-        <test-name value="Se crea el snap" />
+        <test-name value="wrapperCategorias" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="wrapperCategorias" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/__test__/textSuitesComponents/categoriesComponent.text.js" />
+      <test-names>
+        <test-name value="wrapperCategorias" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.wrapperCategorias (1)" />
+        <item itemvalue="Jest.wrapperCategorias" />
+        <item itemvalue="Jest.ContainerComponent" />
         <item itemvalue="Jest.MainDetailsProductScreen" />
         <item itemvalue="Jest.MainDetailsProductScreen.Se crea el snap" />
-        <item itemvalue="Jest.MainDashboardProductScreen.Se crea el snap" />
-        <item itemvalue="Jest.MainSearchProductScreen.Se crea el snap" />
-        <item itemvalue="Jest.MainDashboardProductScreen" />
       </list>
     </recent_temporary>
   </component>
