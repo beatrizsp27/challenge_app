@@ -7,14 +7,18 @@ const CategoriesComponent = ({categoriesArray}) =>{
                 categoriesArray && categoriesArray.length > 0 && (
                     <>
                         <div  className={'screens_category'}>
-                            {categoriesArray.map((categoryItem, index)=> {
-                                const categoriesArrayLength = categoriesArray.length;
-                                const isOtherFormat = index+1 === categoriesArrayLength;
-                                const sign = '>'
-                                return (
-                                    // eslint-disable-next-line react/jsx-key
-                                        <label key={index}  className={isOtherFormat? 'screens_title_body_header_bold' :'screens_title_body_header'}> {isOtherFormat ? categoryItem : `${categoryItem}${sign}`} </label>
-                                )})}
+                            <div  className={'list_ul'}>
+                                {categoriesArray.map((categoryItem, index)=> {
+                                    const categoriesArrayLength = categoriesArray.length;
+                                    const isOtherFormat = index+1 === categoriesArrayLength;
+                                    const sign = ' >'
+                                    return (
+                                        // eslint-disable-next-line react/jsx-key
+                                        <li key={index} >
+                                            <span  className={isOtherFormat? 'screens_title_body_header_bold' :'screens_title_body_header'}> {isOtherFormat ? categoryItem : `${categoryItem}${sign}`} </span>
+                                        </li>
+                                    )})}
+                            </div>
                         </div>
                     </>
                 )

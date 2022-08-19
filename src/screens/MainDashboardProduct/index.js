@@ -14,6 +14,7 @@ const MainDashboardProduct = () => {
 	const [errorMessage, setErrorMessage] = useState(null);
 	const [arrayListProduct, setArrayListProduct] = useState([]);
 	const [categoriesArray, setCategoriesArray] = useState([]);
+	const [limit] = useState(4);
 	const { search } = useLocation();
 
 	useEffect(()=>{
@@ -26,6 +27,7 @@ const MainDashboardProduct = () => {
 		if(textSearch){
 			await GET_PRODUCT_SEARCH(
 				textSearch,
+				limit,
 				onSuccessGetProductSearch,
 				onErrorGetProductSearch,
 				onDoneGetProductSearch
@@ -77,14 +79,14 @@ const MainDashboardProduct = () => {
 			<CategoriesComponent categoriesArray={categoriesArray}/>
 			<>
 				{errorMessage &&  (
-				<ContainerComponent>
-					<div className={'screens_app_root'}>
-						<>
-							<label>Error</label>
-							<h1 className={'screens_title_error'}>{errorMessage}</h1>
-						</>
-					</div>
-				</ContainerComponent>
+					<ContainerComponent>
+						<div className={'screens_app_root'}>
+							<>
+								<label>Error</label>
+								<h1 className={'screens_title_error'}>{errorMessage}</h1>
+							</>
+						</div>
+					</ContainerComponent>
 				)}
 				{arrayListProduct && arrayListProduct.length > 0 && (
 					<>

@@ -107,10 +107,12 @@ const MainDetailsProduct = () => {
 								</div>
 							</div>
 						</div>
-						<div className={'screen_details_description'}>
-							<h3 className={'screen_title_description'}>Descripción del producto</h3>
-							<p className={'screen_description'}>{product.description} </p>
-						</div>
+						{product.description && (
+							<div className={'screen_details_description'}>
+								<h3 className={'screen_title_description'}>Descripción del producto</h3>
+								<p className={'screen_description'}>{product.description} </p>
+							</div>
+						)}
 					</div>
 				)}
 			</ContainerComponent>

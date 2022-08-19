@@ -3,14 +3,7 @@
 exports[`MainDashboardProductScreen Se crea el snap 1`] = `
 <div>
   <div
-    className="screens_title_header"
-  >
-    <label
-      className="screens_title_body_header"
-    >
-      Electronica &gt; audio &gt; video &gt; iphone
-       
-    </label>
-  </div>
+    className="screens_component_category"
+  />
 </div>
 `;

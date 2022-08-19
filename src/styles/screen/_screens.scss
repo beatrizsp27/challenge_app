@@ -66,6 +66,12 @@ body {
 .screens_category {
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.list_ul li {
+	display: inline;
+	margin-right:3px;
 }
 
 .screens_component_category{
@@ -145,16 +151,13 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	color: #999999;
-	margin-right: 20px;
 }
 
 .screens_title_body_header_bold {
 	font-weight: 800;
 	font-size: 14px;
 	color: #999999;
-	margin-left: 20px;
 }
-
 
 .text_price {
 	margin-right: 6px;
