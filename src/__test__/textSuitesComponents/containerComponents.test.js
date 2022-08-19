@@ -6,15 +6,15 @@ import renderer from "react-test-renderer";
 
 configure({adapter: new Adapter() })
 
-describe("* ContainerComponent", ()=>{
+describe("ContainerComponent", ()=>{
 
     test('Prueba Container component buscar si cuenta con un componente hijo', () => {
         const output = shallow(<ContainerComponent/>);
         expect(output.children().exists()).toBe(false);
     });
 
-    // SE RENDERIZA EL COMPONENTE CASO DE PRUEBA
-    test("Se crea el snap", () => {
+    /** SE RENDERIZA EL COMPONENTE CASO DE PRUEBA**/
+    test("Se crea el Snapshot", () => {
         const tree = renderer.create(
             <ContainerComponent>
               <h1>Hola mundo</h1>
