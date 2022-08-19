@@ -1,35 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MainSearchProductScreen Se crea el snap 1`] = `
-<div>
+<div
+  className="screens_details_header"
+>
   <form
     onSubmit={[Function]}
   >
     <div
-      className="screens_details_header"
+      className="screens_details_form"
     >
-      <div>
+      <div
+        className="box_img_search"
+      >
         <img
-          className="box_img_mel"
+          className="box_img"
           src="Logo_ML@2x.png.png"
         />
       </div>
-      <input
-        className="box_input_text"
-        name="search"
-        onChange={[Function]}
-        placeholder="Nunca dejes de buscar"
-        type="search"
-      />
       <div
-        className="box_search_icon"
-        onClick={[Function]}
+        className="box_input_icon_search"
       >
-        <img
-          alt=""
-          className="box_img_mel"
-          src="ic_Search@2x.png.png"
+        <input
+          className="box_input_text"
+          name="search"
+          onChange={[Function]}
+          placeholder="Nunca dejes de buscar"
+          type="search"
         />
+        <div
+          className="box_search_icon"
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            className="box_img_mel"
+            src="ic_Search@2x.png.png"
+          />
+        </div>
       </div>
     </div>
   </form>

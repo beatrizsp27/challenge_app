@@ -14,10 +14,6 @@ Array [
   </div>,
   <div
     className="screens_component_div"
-  >
-    <div
-      className="screens_app_root"
-    />
-  </div>,
+  />,
 ]
 `;

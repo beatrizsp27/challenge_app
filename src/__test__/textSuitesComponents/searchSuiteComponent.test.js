@@ -50,7 +50,7 @@ describe("ContainerComponent", ()=>{
         wrapperSearch.find('form').simulate('submit', {preventDefault: prevent});
 
         /** SE VALDIA QUE EXISTA EL NODO DONDE SE ESNCUNTRA EL CLIC**/
-        expect(wrapperSearch.find('div')).toHaveLength(3);
+        expect(wrapperSearch.find('div')).toHaveLength(5);
 
         /** SE SIMULA EL CLIC DE LA BUSQUEDA**/
         const simulateOnCLick = wrapperSearch.find('div').at(2);
