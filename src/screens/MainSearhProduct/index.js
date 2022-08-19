@@ -11,19 +11,24 @@ const MainSearchProduct = () => {
     const [textSearch, setTextSearch] = useState(null);
     const [arrayListProduct, setArrayListProduct] = useState([]);
     const [errorMessage, setErrorMessage] = useState(null);
+    const [showList, setShowList] = useState(false);
 
     const navigate = useNavigate();
     const handleChange = (text) =>{
-        console.log( "text.target.value:" + text.target.value)
         text.preventDefault();
         if(text && text.target && text.target.value){
             getProductSearchText()
             setTextSearch(text.target.value);
             setErrorMessage(null);
         }else {
-            setArrayListProduct([]);
-            setTextSearch(null);
-            navigate('/');
+            const list = [];
+            setTimeout(()=>{
+                setTextSearch(null);
+                navigate('/');
+                setArrayListProduct(list);
+                setShowList(false);
+            }, 200)
+
         }
     };
 
@@ -41,13 +46,14 @@ const MainSearchProduct = () => {
         if(textSearch){
             await GET_PRODUCT_SEARCH(
                 textSearch,
-                null,
+                12,
                 onSuccessGetProductSearch,
                 onErrorGetProductSearch,
                 onDoneGetProductSearch
             );
         }else {
             setArrayListProduct([]);
+            setShowList(false);
         }
     };
 
@@ -56,8 +62,8 @@ const MainSearchProduct = () => {
         if (success) {
             if(data){
                 const {items} = data;
-                console.log("items::::" + JSON.stringify(items))
                 setArrayListProduct(items);
+                setShowList(true);
             }
         }
     };
@@ -98,13 +104,21 @@ const MainSearchProduct = () => {
                         </div>
                     </ContainerComponent>
                 )}
-               {arrayListProduct && arrayListProduct.length>0 && (
-                <div className={'list_search'}>
-                    {arrayListProduct.map((product, index)=>(
-                        <a onClick={()=>goToNavigateProductByText(product.title)} key={index}>{product.title}</a>
-                    ))}
-                </div>
-            )}
+                {
+                    showList && (
+                        <>
+                            {arrayListProduct && arrayListProduct.length > 0 && (
+                                <div className={'list_search'}>
+                                    {arrayListProduct.map((product, index)=>(
+                                        <a onClick={()=>goToNavigateProductByText(product.title)} key={index}>{product.title}</a>
+                                    ))}
+                                </div>
+                            )}
+                        </>
+                    )
+                }
+
+
         </>
     );
 };

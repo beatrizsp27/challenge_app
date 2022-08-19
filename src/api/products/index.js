@@ -10,7 +10,6 @@ export const GET_PRODUCT_SEARCH = async (text, limit ,onSuccess, onError, onDone
             url= `${paths.items}?q=${text}`;
         }
     }
-    console.log("url::" + url );
     await GET_NO_AUTH(url, onSuccess, onError, onDone);
 };
 

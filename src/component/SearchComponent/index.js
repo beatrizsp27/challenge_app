@@ -12,6 +12,7 @@ const SearchComponent = ({ handleChange, onAction }) => {
                     </div>
                     <div className={'box_input_icon_search'} >
                         <input
+                            autoComplete={'false'}
                             name={'search'}
                             className="box_input_text"
                             type="search"
