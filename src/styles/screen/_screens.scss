@@ -33,6 +33,7 @@ body {
 	margin-bottom: 16px;
 	@media (max-width: 60rem) {
 		height: auto;
+		max-width: 90%;
 		max-height: none;
 	}
 }

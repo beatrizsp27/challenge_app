@@ -24,12 +24,12 @@ const MainSearchProduct = () => {
     };
 
     return (
-        <div>
+        <>
             <SearchComponent
                 textSearch={textSearch}
                 onAction={goToNavigateProduct}
                 handleChange={(text)=>handleChange(text)}/>
-        </div>
+        </>
     );
 };
 
