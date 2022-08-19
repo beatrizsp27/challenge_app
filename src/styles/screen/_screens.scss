@@ -23,13 +23,13 @@ body {
 }
 
 .screens_title_header {
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: auto;
 	max-width: 80%;
 	height: auto;
 	margin: auto;
-	display: flex;
 	margin-bottom: 16px;
 	@media (max-width: 60rem) {
 		height: auto;
